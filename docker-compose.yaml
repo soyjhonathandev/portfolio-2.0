@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend.dev
+    container_name: front-end-portfolio
+    restart: on-failure
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./front-end:/app
+      - /app/node_modules
+    tty: true
+    stdin_open: true

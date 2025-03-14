@@ -1,0 +1,32 @@
+{
+  "homePage": {
+    "heroTitle": "THIS IS JHONATHAN'S PORTFOLIO",
+    "heroDescription": "Desarrollador Full Stack con 5 años de experiencia transformando desafíos complejos en soluciones elegantes. ",
+    "issueNumber": "Edición No. {number}",
+    "featuredProjects": "Proyectos Destacados",
+    "aboutTitle": "Sobre Mí",
+    "aboutDescription": "Soy un tecnólogo apasionado con 5 años de experiencia en desarrollo de software, y me encanta convertir desafíos complejos en soluciones elegantes. Mi trayectoria en tecnología ha sido una emocionante aventura de aprendizaje y crecimiento continuo, formada por experiencia práctica tanto con empresas establecidas como con proyectos innovadores desde cero. Experiencia y Habilidades: He tenido la increíble oportunidad de trabajar en diversos proyectos que me han enseñado muchísimo en el camino. Desde colaborar con empresas extraordinarias como ISUZU, FONET.CA y TradeTrain, Inc. hasta construir plataformas que ayudan a miles de usuarios mensualmente, cada proyecto ha añadido nuevas dimensiones a mi comprensión de la tecnología. Estoy particularmente entusiasmado con mi trabajo reciente integrando sistemas de pago con bancos y plataformas modernas como Binance y Plaid.",
+    "aboutDescription2": "Creo que el buen software surge de entender tanto los requisitos técnicos como las necesidades humanas que hay detrás. Me enfoco en escribir código limpio y mantenible, mientras mantengo en mente la seguridad y la escalabilidad. Aprender de cada proyecto y de cada miembro del equipo es parte de lo que hace que este campo sea tan emocionante para mí.",
+    "skillsTitle": "Stack",
+    "typewriter1": "¡Hola! Bienvenido a mi portafolio.",
+    "typewriter2": "Espero que disfrutes tu visita."
+  },
+  "footer": {
+    "about": "Acerca de",
+    "aboutText": "Desarrollador full stack con un deseo inquebrantable de nunca parar de aprender.",
+    "navigation": "Navegación",
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "aboutLink": "Sobre Mí",
+    "contact": "Contacto",
+    "contactText": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "copyright": "Todos los Derechos Reservados"
+  },
+  "projects": {
+    "role": "Rol",
+    "description": "Descripción",
+    "challenges": "Desafíos",
+    "technologies": "Tecnologías",
+    "visitProject": "Visitar Proyecto"
+  }
+}

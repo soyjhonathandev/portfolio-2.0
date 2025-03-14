@@ -1,0 +1,21 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend.testing
+    container_name: front-end-test
+    restart: on-failure
+    ports:
+      - "3000:3000"
+    depends_on:
+      - nginx
+    tty: true
+    stdin_open: true
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./front-end/nginx/default.conf:/etc/nginx/conf.d/default.conf

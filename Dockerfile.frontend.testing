@@ -1,0 +1,29 @@
+FROM node:18.18-slim
+
+WORKDIR /app
+
+# Copiar archivos de dependencias
+COPY front-end/package.json ./package.json
+COPY front-end/yarn.lock ./yarn.lock
+
+# Instalar dependencias
+RUN yarn install
+
+# Copiar todo el código fuente
+COPY front-end/ ./
+
+# Verificar contenido antes del build
+RUN echo "Contenido antes del build:" && ls -la
+
+# Construir la aplicación con más verbose
+RUN yarn next build
+
+# Verificar que .next se creó correctamente
+RUN echo "Contenido después del build:" && \
+    ls -la && \
+    echo "Contenido de .next:" && \
+    ls -la .next
+
+EXPOSE 3000
+
+CMD ["yarn", "run", "start"]

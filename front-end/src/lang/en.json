@@ -1,0 +1,32 @@
+{
+  "homePage": {
+    "heroTitle": "PORTFOLIO",
+    "heroDescription": "Full Stack Developer with 5 years of experience transforming complex challenges into elegant solutions.",
+    "issueNumber": "Issue No. {number}",
+    "featuredProjects": "Featured Projects",
+    "aboutTitle": "About Me",
+    "aboutDescription": "I'm a passionate technologist with 5 years of experience in software development, and I absolutely love turning complex challenges into elegant solutions. My journey in tech has been an exciting adventure of continuous learning and growth, shaped by hands-on experience with both established companies and innovative projects from zero. Experience and Skills: I've had the incredible opportunity to work on diverse projects that have taught me so much along the way. From collaborating with amazing companies like ISUZU and FONET.CA and TradeTrain, inc to building platforms that helps thousands of users monthly, each project has added new dimensions to my understanding of technology. I'm particularly excited about my recent work integrating payment systems with banks and modern platforms like Binance and Plaid.",
+    "aboutDescription2": "I believe great software comes from understanding both the technical requirements and the human needs behind them. I focus on writing clean, maintainable code while keeping security and scalability in mind. Learning from every project and every team member is part of what makes this field so exciting for me.",
+    "skillsTitle": "Stack",
+    "typewriter1": "Hello there! Welcome to my portfolio.",
+    "typewriter2": "I hope you enjoy your stay."
+  },
+  "footer": {
+    "about": "About",
+    "aboutText": "Full stack developer with an unwavering desire to never stop learning.",
+    "navigation": "Navigation",
+    "home": "Home",
+    "projects": "Projects",
+    "aboutLink": "About",
+    "contact": "Contact",
+    "contactText": "Have a project in mind? Let's talk!",
+    "copyright": "All Rights Reserved"
+  },
+  "projects": {
+    "role": "Role",
+    "description": "Description",
+    "challenges": "Challenges",
+    "technologies": "Technologies",
+    "visitProject": "Visit Project"
+  }
+}
