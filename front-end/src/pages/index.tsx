@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { useTranslations } from "next-intl"
-import Typewriter from 'typewriter-effect';
+import { TypeAnimation } from 'react-type-animation';
 import { Header } from "@components/Header"
 import { Footer } from "@components/Footer"
 import { ProjectCard } from "@components/ProjectCard"
@@ -19,7 +19,9 @@ const HomePage: React.FC = () => {
   
   const typewriterStrings = [
     t('typewriter1') || 'Hello there! Welcome to my portfolio.',
+    2000,
     t('typewriter2') || 'I hope you enjoy your stay.',
+    2000,
   ]
 
   useEffect(() => {
@@ -86,13 +88,10 @@ const HomePage: React.FC = () => {
             <div className="h-[50vh]">
               <h1 className=" break-words font-black text-6xl md:text-9xl tracking-tighter text-left mb-6 font-serif w-full overflow-hidden leading-tight">
                 <div className="w-full h-auto min-h-[1.2em] py-2">
-                  <Typewriter
-                    options={{
-                      strings: typewriterStrings,
-                      delay: 120,
-                      autoStart: true,
-                      loop: true,
-                    }}
+                  <TypeAnimation
+                    sequence={ typewriterStrings }
+                    speed={90}
+                    repeat={Infinity}
                   />
                 </div>
               </h1>
