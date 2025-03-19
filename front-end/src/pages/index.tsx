@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react"
 import { useTranslations } from "next-intl"
-import { TypeAnimation } from 'react-type-animation';
+import { Typewriter } from 'react-simple-typewriter'
+import Head from 'next/head';
 import { Header } from "@components/Header"
 import { Footer } from "@components/Footer"
 import { ProjectCard } from "@components/ProjectCard"
@@ -19,9 +20,7 @@ const HomePage: React.FC = () => {
   
   const typewriterStrings = [
     t('typewriter1') || 'Hello there! Welcome to my portfolio.',
-    2000,
     t('typewriter2') || 'I hope you enjoy your stay.',
-    2000,
   ]
 
   useEffect(() => {
@@ -64,6 +63,15 @@ const HomePage: React.FC = () => {
   }, [])
 
   return (
+    <>
+         <Head>
+        <title>Jhonathandev | Portfolio</title>
+        <meta
+          name="description"
+          content="Jhonathan Hartswing Saldarriaga Gallango, Full Stack Developer"
+        />
+      </Head>
+  
     <div className="flex flex-col min-h-screen bg-[#EFE8DE]">
 
       <Header />
@@ -88,10 +96,10 @@ const HomePage: React.FC = () => {
             <div className="h-[50vh]">
               <h1 className=" break-words font-black text-6xl md:text-9xl tracking-tighter text-left mb-6 font-serif w-full overflow-hidden leading-tight">
                 <div className="w-full h-auto min-h-[1.2em] py-2">
-                  <TypeAnimation
-                    sequence={ typewriterStrings }
-                    speed={90}
-                    repeat={Infinity}
+                  <Typewriter
+                    words={ typewriterStrings }
+                    typeSpeed={140}
+                    loop={0}
                   />
                 </div>
               </h1>
@@ -187,7 +195,8 @@ const HomePage: React.FC = () => {
       >
         <Footer />
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 

@@ -35,8 +35,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
             messages={messages[locale as keyof typeof messages]}
           >
         <Component {...pageProps} />
-        <Analytics />
-          </NextIntlClientProvider>
+       
+      </NextIntlClientProvider>
+      <Analytics />
     </>
   );
 }

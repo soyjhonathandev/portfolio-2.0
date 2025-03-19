@@ -1,14 +1,14 @@
-import Isuzu from "@public/img/isuzu.png"
+import Isuzu from "@public/img/isuzu.svg"
 import Froz from "@public/img/froz.png"
 import Fonet from "@public/img/fonet.png"
 import SanMartin from "@public/img/san martin.png"
 import Chartiers from "@public/img/chartiers.png"
 import Canada from "@public/img/canada.png"
-import Cobrix from "@public/img/cobrix.png"
+import Cobrix from "@public/img/cobrix.svg"
 import Suppli from "@public/img/suppli.png"
 import Vela from "@public/img/vela.png"
 import Diverso from "@public/img/diverso.png"
-import Vpn from "@public/img/vpn.png"
+import Vpn from "@public/img/vpn.svg"
 import Transportex from "@public/img/transportex.png"
 
 export const projects = [
@@ -66,11 +66,11 @@ export const projects = [
         id: 6,
         image: Cobrix,
         name: "Cobrix",
-        description: "Massive notifications sending platform",
+        description: "Developed Cobrix, a comprehensive subscription management platform that streamlines payment collection for businesses operating on recurring revenue models. This Next.js and Nest.js solution, powered by PostgreSQL, automates the entire collection process for gyms, internet service providers, and similar subscription-based businesses. The system delivers timely payment reminders across multiple channels (WhatsApp, SMS, and email), providing customers with convenient payment links and generating detailed collection reports that help businesses optimize their cash flow.",
         role: "Full Stack Developer", 
-        challenges: "",
+        challenges: "Successfully engineered a robust multi-channel notification system by integrating WhatsApp, SMS, and email APIs into a unified communication framework. Created an intelligent scheduling algorithm that optimizes message delivery timing to maximize response rates while minimizing customer annoyance. Implemented a secure payment link system that allows for real-time status updates when payments are received, automatically reflecting changes in the company's collection records without manual intervention.",
         stack: ["Next.js", "Nest.js", "PostgresSQL", "AWS", "Redis"],
-        url: "https://www.cobrix.com",
+        url: "https://www.cobrix.co",
     },
     {
         id: 7,
@@ -86,9 +86,9 @@ export const projects = [
         id: 8,
         image: Froz,
         name: "FROZ SPORTS (SCHOLARSHIP SYSTEM)",
-        description: "This is project 4",
+        description: "Developed Froz Sports, a comprehensive athletic opportunity platform connecting talented soccer and baseball players with U.S. university recruitment programs. Built with Next.js frontend and a robust Nest.js/Express backend powered by MySQL, this solution provides detailed baseball analytics and university soccer scholarship information. The platform features role-specific dashboards for recruiters, administrators, and student-athletes, enabling seamless information exchange and application tracking throughout the recruitment process.",
         role: "Full Stack developer (Including UI & UX designer and Cloud Administrator)",
-        challenges: "This is a challenge",
+        challenges: "Successfully engineered a complex multi-tier access system with distinct workflows for different user types while maintaining data security and privacy. Implemented sophisticated athlete profiling that effectively translated sports performance metrics into recruitment potential for U.S. universities. Created an intuitive application tracking system that provided real-time status updates to applicants while giving recruiters comprehensive tools to evaluate talent across multiple athletic disciplines and geographic regions.",
         stack: ["Next.js", "Nest.js", "MySQL", "AWS", "Redis"],
         url: "https://froz-platform-frbm.vercel.app",
     },
@@ -96,9 +96,9 @@ export const projects = [
         id: 9,
         image: Chartiers,
         name: "CHARTIERS DEL MAR (YACH BOOKING WEB)",
-        description: "This is project 5",
+        description: "Revitalized Chartiers del Mar,  an existing WordPress-based yacht rental platform, through strategic visual enhancements and implementation of a seamless payment processing system. The project transformed the previously static showcase site into a fully functional e-commerce platform, enabling customers to browse available yachts and complete the entire rental transaction online. Updated design elements and improved user interface created a premium digital experience that properly reflected the luxury yacht rental service.",
         role: "Frontend Developer",
-        challenges: "This is a challenge",
+        challenges: "Successfully integrated a secure payment gateway into the existing WordPress architecture without disrupting the site's established structure or SEO performance. Navigated complex WordPress customization requirements to implement yacht availability calendars and booking functionality while maintaining mobile responsiveness. Created an intuitive reservation flow that balanced the collection of necessary client information with a streamlined checkout process appropriate for high-value yacht rental transactions.",
         stack: ["Wordpress", "Php"],
         url: "https://chartiersdelmar.com",
     },
@@ -106,9 +106,9 @@ export const projects = [
         id: 10,
         image: SanMartin,
         name: "SAN MARTIN FC (MOBILE APP)",
-        description: "This is project 6",
+        description: "Developed a comprehensive mobile application for San Martin Argentinian Football Club that connects fans with team activities across iOS and Android platforms. Built with React Native and supported by a Nest.js backend with MongoDB, this fan engagement solution delivers real-time news updates, detailed match schedules, historical game archives, and integrated ticket purchasing through Mercado Pago. The application provides supporters with a seamless experience to follow their team and secure game tickets directly from their mobile devices.",
         role: "Full Stack developer (Including UI & UX designer and Cloud Administrator)",
-        challenges: "This is a challenge",
+        challenges: "Successfully navigated the complexities of cross-platform mobile development while maintaining native performance and consistently branded user experience. Implemented robust real-time data synchronization between the mobile application and backend systems to ensure accurate match information and news updates. Engineered secure payment processing through Mercado Pago integration that handled high-volume ticket sales during peak periods while maintaining transaction integrity and providing instant ticket delivery to users.",
         stack: ["React-Native", "Nest.js", "MySQL", "Figma"],
         url: "https://www.figma.com/file/NrbeHymmh0QdmQwcrRUoih/San-Martin-App?type=design&node-id=0-1&mode=design&t=pdWxJRf6Fc6dH6lW-0",
     },
@@ -116,9 +116,9 @@ export const projects = [
         id: 11,
         image: Diverso,
         name: "DIVERSO GROUP (WEB PLATFORM)",
-        description: "This is project 7",
+        description: "Crafted Diverso, an elegantly minimalist landing page for a marketing and design agency that showcases their portfolio and services through a distinctive vintage aesthetic. Built exclusively with Next.js, this highly stylized digital presence effectively communicates the agency's creative capabilities while emphasizing their unique design approach. The page combines thoughtful typography, strategic white space, and seamless animations to create an immersive browsing experience that reflects the agency's commitment to sophisticated design principles.",
         role: "UI & UX designer and front-end.",
-        challenges: "This is a challenge",
+        challenges: "Successfully translated the agency's vintage-inspired minimalist vision into a responsive web experience without relying on additional frameworks or libraries. Implemented performance-optimized animations and transitions that maintained the delicate balance between aesthetic complexity and page load speed. Created a seamless project showcase that effectively highlighted the diversity of the agency's work while maintaining visual coherence throughout the user journey.",
         stack: ["Next.js", "AWS"],
         url: "https://diversocreativeagency.com",
     },
@@ -126,8 +126,9 @@ export const projects = [
         id: 12,
         image: Transportex,
         name: "TRANSPORTEX (MOBILE APP)",
-        description: "This is project 8",
+        description: "Developed Transportex, a comprehensive fleet management mobile application built with React Native for both iOS and Android platforms. This solution enables a trucking company to track vehicle usage, monitor distances traveled, and optimize maintenance scheduling across their entire fleet. The application provides real-time monitoring capabilities, detailed route history, and automated maintenance alerts based on mileage thresholds, helping the company maximize vehicle lifespan and operational efficiency.",
         role: "Cloud Administrator.",
+        challenges: "Successfully implemented complex database architecture utilizing MySQL stored procedures that significantly improved data processing efficiency and reporting capabilities. Engineered a robust AWS deployment infrastructure that ensured reliable service availability and secure data handling across multiple geographic regions. Created an intuitive driver interface that simplified data collection during routes while maintaining accurate GPS tracking, even in areas with limited connectivity.",
         stack: ["React-Native", "MySQL", "Nest.js", "AWS"],
         url: "https://play.google.com/store/apps/details?id=com.japcode.transportexmobileapp&pcampaignid=web_share",
     },

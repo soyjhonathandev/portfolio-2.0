@@ -20,10 +20,8 @@ export const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  // Detectar si estamos en la página principal
   const isHomePage = pathname === "/" || pathname === `/${locale}`;
 
-  // Navegación con anclajes para la página principal, o enlaces normales para otras páginas
   const navigation = [
     { name: "Home", href: isHomePage ? "#home" : "/" },
     { name: "Projects", href: isHomePage ? "#projects" : "/projects" },
@@ -35,29 +33,23 @@ export const Header: React.FC = () => {
     { code: "es", name: "Español" },
   ]
 
-  // Función para manejar el scroll suave al hacer clic en un anclaje
   const handleSmoothScroll = (e: any, href: any) => {
-    // Solo aplicar para anclajes en la página principal
     if (isHomePage && href.startsWith('#')) {
       e.preventDefault();
       const targetId = href.substring(1);
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
-        // Cerrar el menú móvil si está abierto
         if (isMenuOpen) {
           setIsMenuOpen(false);
         }
 
-        // Scroll suave hacia la sección
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
   };
 
-  // Función para manejar el cambio de idioma y cerrar el dropdown
   const handleLanguageChange = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Cerrar el dropdown después de un breve retraso para permitir que la navegación ocurra
     setTimeout(() => {
       setIsLanguageDropdownOpen(false);
     }, 100);
@@ -70,8 +62,8 @@ export const Header: React.FC = () => {
           <div className="flex-1">
             <a href={isHomePage ? "#home" : "/"}
               onClick={(e) => handleSmoothScroll(e, isHomePage ? "#home" : "/")}
-              className="font-baseFont text-2xl md:text-3xl font-black tracking-tighter font-serif">
-              soyhonathan.dev
+              className="font-baseFont border border-black border-b-4 p-2 text-2xl md:text-3xl font-black tracking-tighter font-serif">
+              J
             </a>
           </div>
 

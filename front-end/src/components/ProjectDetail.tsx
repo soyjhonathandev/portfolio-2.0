@@ -18,8 +18,7 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
 
     return (
         <div className="bg-white border-2 border-black p-6 md:p-8">
-            <div className="flex justify-between items-center mb-6">
-                <h2 className="text-3xl md:text-4xl font-bold font-serif tracking-tight">{project.name}</h2>
+            <div className="flex justify-end items-center mb-6">
                 <Button variant="outline" size="icon" onClick={onClose} className="border-2 border-black rounded-none">
                     <X className="h-5 w-5" />
                 </Button>
@@ -36,7 +35,10 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({ project, onClose }
                 </div>
 
                 <div>
+                    <h2 className=" my-5 text-2xl md:text-3xl font-bold font-serif tracking-tight">{project.name}</h2>
+
                     <div className="mb-6">
+                    
                         <h3 className="text-xl font-bold font-serif mb-2">{t("role")}</h3>
                         <p className="font-secondaryFont font-normal ">{project.role}</p>
                     </div>
